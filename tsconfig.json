@@ -8,6 +8,7 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
+    "incremental": true,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
@@ -15,7 +16,7 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@/appcfg": ["./appcfg.js"]
+      "@/cms/*": ["cms/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

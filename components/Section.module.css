@@ -1,0 +1,9 @@
+.section + .section {
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+  border-top: 4px solid var(--seperator-color);
+}
+
+.title {
+  margin-bottom: 1.5rem;
+}

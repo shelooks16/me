@@ -1,0 +1,17 @@
+.bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 3px solid var(--seperator-color);
+}
+
+.cv strong {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 550px) {
+  .cv ul {
+    padding-left: 30px;
+  }
+}

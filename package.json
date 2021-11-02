@@ -1,5 +1,5 @@
 {
-  "name": "me",
+  "name": "shelooks16",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,19 +11,25 @@
     "format": "prettier --write **/*.tsx"
   },
   "dependencies": {
-    "classnames": "^2.3.1",
-    "gray-matter": "^4.0.3",
-    "next": "11.0.1",
-    "next-mdx-remote": "^3.0.4",
+    "classnames": "2.3.1",
+    "feed": "^4.2.2",
+    "gray-matter": "4.0.3",
+    "next": "12.0.1",
+    "next-mdx-remote": "3.0.7",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-to-print": "^2.14.0",
+    "read-time-estimate": "0.0.3",
+    "rehype-autolink-headings": "6.1.0",
+    "rehype-external-links": "1.0.0",
+    "rehype-slug": "5.0.0"
   },
   "devDependencies": {
-    "@types/react": "17.0.16",
-    "eslint": "7.32.0",
-    "eslint-config-next": "11.0.1",
-    "eslint-config-prettier": "^8.3.0",
-    "prettier": "^2.3.2",
-    "typescript": "4.3.5"
+    "@types/react": "17.0.33",
+    "eslint": "8.1.0",
+    "eslint-config-next": "12.0.1",
+    "eslint-config-prettier": "8.3.0",
+    "prettier": "2.4.1",
+    "typescript": "4.4.4"
   }
 }

@@ -1,16 +1,110 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+:root {
+  --body-padding: 25px 0;
+  --body-font-size: 17px;
+
+  --font-size-h1: 1.65em;
+  --font-size-h2: 1.3em;
+  --font-size-h3: 1.1em;
+
+  --heading-color: rgb(10, 10, 10);
+  --link-color: #000;
+  --text-color: #000;
+  --secondary-text-color: rgb(80, 80, 80);
+  --text-selection-color: #f8edac;
+  --seperator-color: rgba(0, 0, 0, 0.03);
+
+  --action-btn-background: rgb(11, 161, 136);
+  --action-btn-color: #fff;
+
+  --link-btn-background: rgb(37, 118, 165);
+  --link-btn-color: #fff;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@media screen and (min-width: 750px) {
+  :root {
+    --body-padding: 50px 0;
+    --body-font-size: 18px;
+
+    --font-size-h1: 2em;
+    --font-size-h2: 1.4em;
+    --font-size-h3: 1.2em;
+  }
 }
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  padding: var(--body-padding);
+  font-size: var(--body-font-size);
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: #fdfdfd;
+  color: var(--text-color);
+  letter-spacing: 0.1px;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+h2 {
+  font-size: var(--font-size-h2);
+}
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+::selection {
+  background: var(--text-selection-color);
+}
+::-moz-selection {
+  background: var(--text-selection-color);
+}
+
+button {
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px 1px rgb(0 0 0 / 10%);
+  transition: 0.2s box-shadow;
+  border-radius: 3px;
+  font-size: calc(var(--body-font-size) - 3px);
+}
+
+button:hover {
+  box-shadow: 2px 2px 3px 1px rgb(0 0 0 / 25%);
+}
+
+.btn-action {
+  color: var(--action-btn-color);
+  background-color: var(--action-btn-background);
+}
+
+.btn-link {
+  color: var(--link-btn-color);
+  background-color: var(--link-btn-background);
+}
+
+.heading-link {
+  margin-right: 0.3em;
+  font-size: 0.75em;
 }

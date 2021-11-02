@@ -1,0 +1,118 @@
+.layout {
+  line-height: 1.4;
+}
+
+.header {
+  text-align: center;
+}
+
+.subheader {
+  color: var(--secondary-text-color);
+  font-size: 0.9em;
+}
+
+.post {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.post {
+  font-size: 17px;
+}
+
+.post pre {
+  display: block;
+  overflow-x: auto;
+  background: rgb(43, 48, 59);
+  color: rgb(192, 197, 206);
+  padding: 0.8rem 0.8rem 1.5rem 0.8rem;
+}
+
+.post mark {
+  color: rgb(0, 0, 0);
+  padding: 0px 5px;
+  font-size: 0.85em;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 3px;
+  background-color: rgb(255, 255, 235);
+}
+
+.post a {
+  text-decoration: underline;
+}
+
+.post a:hover {
+  color: rgb(230, 23, 23);
+}
+
+.post blockquote {
+  border-left: 4px solid var(--action-btn-background);
+  padding: 0.5rem 1rem;
+  margin: 0.8rem 0;
+  color: var(--blockquote-color);
+}
+
+.post blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.post img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.post h1,
+.post h2,
+.post h3,
+.post h4,
+.post h5,
+.post h6 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.post code {
+  font-size: 1rem;
+}
+
+.post code::selection {
+  color: #000;
+}
+
+.post code::-moz-selection {
+  color: #000;
+}
+
+.bottom {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+  border-top: 3px solid var(--seperator-color);
+}
+
+.actionBtns {
+  display: inline-flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.actionBtns button {
+  width: 100%;
+}
+
+.actionBtns > li:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+@media screen and (max-width: 550px) {
+  .post ul,
+  .post ol {
+    padding-inline-start: 25px;
+  }
+
+  .post code {
+    font-size: 0.9rem;
+  }
+}

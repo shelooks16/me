@@ -1,0 +1,20 @@
+.cover {
+  border-radius: 3px;
+  margin-bottom: 0.5rem;
+}
+
+.itemTitle {
+  margin-bottom: 0.5rem;
+}
+
+.infos {
+  margin-bottom: 0.7rem;
+  font-size: 0.8rem;
+  color: var(--secondary-text-color);
+}
+
+.description {
+  margin: 0;
+  font-size: 0.8em;
+  color: var(--secondary-text-color);
+}

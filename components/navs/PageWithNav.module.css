@@ -1,0 +1,13 @@
+.main {
+  --main-margin-top: 3rem;
+}
+
+@media screen and (max-width: 550px) {
+  .main {
+    --main-margin-top: 2.5rem;
+  }
+}
+
+.main {
+  margin-top: var(--main-margin-top);
+}
