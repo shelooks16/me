@@ -10,8 +10,23 @@ import rehypeExternalLinks from 'rehype-external-links';
 import Head from 'next/head';
 import ArticleLayout from 'components/articles/ArticleLayout';
 import { ArticleMeta } from '@/cms/data.types';
+import getConfig from 'next/config';
 
-const components = {};
+const {
+  publicRuntimeConfig: { assetPrefix },
+} = getConfig();
+
+const components = {
+  img: ({ src, alt, ...props }: any) => {
+    return (
+      <img
+        {...props}
+        src={assetPrefix && src.startsWith('/') ? `${assetPrefix}${src}` : src}
+        alt={alt}
+      />
+    );
+  },
+};
 
 type PageProps = {
   source: MDXRemoteSerializeResult;
