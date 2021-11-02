@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Articles by shelooks16</title>
+        <link>https://shelooks16.github.io/me</link>
+        <description>Read articles about web technologies written by Andrew Hulenko (shelooks16)</description>
+        <lastBuildDate>Tue, 02 Nov 2021 12:55:21 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <copyright>Andrew Hulenko</copyright>
+        <item>
+            <title><![CDATA[Prepare Windows for Android development without installing Android Studio]]></title>
+            <link>https://shelooks16.github.io/me/articles/prepare-windows-for-android-development-without-installing-android-studio</link>
+            <guid>https://shelooks16.github.io/me/articles/prepare-windows-for-android-development-without-installing-android-studio</guid>
+            <pubDate>Mon, 16 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Configure Android environment for Flutter and React Native development using command line tools.]]></description>
+            <author>blauyedz@zoho.eu (Andrew Hulenko)</author>
+        </item>
+    </channel>
+</rss>
