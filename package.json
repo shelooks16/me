@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://shelooks16.github.io/me",
+  "resolutions": {
+    "trim": "1.0.1"
+  },
   "scripts": {
     "start": "next dev",
     "start:prod": "next start",
@@ -11,7 +14,8 @@
     "build:ghpages": "cross-env DEPLOY_TARGET=ghpages npm run build:static && touch out/.nojekyll",
     "deploy": "npm run build:ghpages && gh-pages -d out --dotfiles",
     "lint": "next lint",
-    "format": "prettier --write **/*.tsx"
+    "format": "prettier --write **/*.tsx",
+    "preinstall": "npx npm-force-resolutions"
   },
   "dependencies": {
     "classnames": "2.3.1",
